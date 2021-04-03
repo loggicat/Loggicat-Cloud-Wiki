@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/serverLogo.png" height="140" />
+<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/loggicatCloud.png" height="140" />
 
 **Loggicat solves data leaks by shifting data security left**
 
