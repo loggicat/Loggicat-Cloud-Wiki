@@ -7,10 +7,13 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/loggicat?style=social)](https://twitter.com/loggicat)
 
 ---
+</div>
 
-<h3 align="center">
+<h3 align="left">
 For <a href="https://github.com/loggicat/Loggicat-watcher-public">Loggicat Watcher</a>
 <br />
 <br />
-  
+
+<hr />
+ 
 # Getting Started With Loggicat Server
