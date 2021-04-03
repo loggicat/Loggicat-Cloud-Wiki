@@ -19,13 +19,22 @@ A Loggicat Watcher acts as a connector between client machines and Loggicat Serv
 ---
 
 # Getting Started With Loggicat Server
-* **[Workflows](https://github.com/snowplow/snowplow-android-tracker)** Some typical workflows with Loggicat
-
-
-* **[Integration](https://github.com/snowplow/snowplow-android-tracker)** Integrate Loggicat with popular tools such as Github, Slack
+* **[Workflow](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#workflows)** Some typical Loggicat use cases
+* **[Features](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#features)** Available features
+* **[Integration](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#integrations)** Integrate Loggicat with popular tools such as Github, Slack
 
 ---
 
 # Workflows
 
-# Integration
+---
+
+# Features
+
+---
+
+# Integrations
+
+---
+
+# Important Notes
