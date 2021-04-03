@@ -30,10 +30,35 @@ A Loggicat Watcher acts as a connector between client machines and Loggicat Serv
 ---
 
 # Overview
+**Loggicat provides a solution to data leaks and drastically decrese the detection time for such issues from months to seconds or hours.**
+<br />
+There are two components:
+- Loggicat Cloud - A saas server to store security findings and configurations.
+- Loggicat Watcher - Deployed on client machines or build machines to scan code, logs and databases.
 
 ---
 
 # Workflows
+Essentially Loggicat uses a smart engine to detect security issues such as plaintext secrets or PII in given text, so Loggicat can be used under many different circumstances.
+<details>
+<summary>
+  Protecting data security in Splunk
+</summary>
+<br />
+Before sending local logs to Splunk, we can now have Loggicat watcher to monitor local logs first and any potential sensitive data will be extracted from the logs and sent to Loggicat Server, your splunk logs will always be clean. 
+<br />
+  
+_Noted : Streaming mode is currentely not supproted. It will be added in the next release.
+ 
+</details>
+<details>
+<summary>
+  Protecting data security in Jenkins
+</summary>
+<br />
+Monitor Jenkins 
+
+</details>
 
 ---
 
