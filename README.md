@@ -15,8 +15,17 @@ For <a href="https://github.com/loggicat/Loggicat-watcher-public">Loggicat Watch
 </h3>
 A Loggicat Watcher acts as a connector between client machines and Loggicat Server.
 <br />
-<br />
 
 ---
 
 # Getting Started With Loggicat Server
+* **[Workflows](https://github.com/snowplow/snowplow-android-tracker)** Some typical workflows with Loggicat
+
+
+* **[Integration](https://github.com/snowplow/snowplow-android-tracker)** Integrate Loggicat with popular tools such as Github, Slack
+
+---
+
+# Workflows
+
+# Integration
