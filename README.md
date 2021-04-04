@@ -104,8 +104,9 @@ Once a cusom rule is created, users can
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules3.PNG" height="250" />
 
 **Allowlists** Loggicat handles false postivies or acceptd risks by using allowlists. 
-- Ignore list: Once a keyword/finding is ignored, future matches with the same security rule will be ignored.
-- Redact list: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead.
+- Ignore list: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
+- Redact list: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
+
 There are two ways to add a new item to allowlists.
 1. Added from "Findings", users will not be able to change the keyword in this case
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist1.PNG" />
@@ -121,7 +122,7 @@ Ignore Popup:
 Redact Popup: 
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist6.PNG" height="200"/>
 
-
+_Items added to whitelists can be edited or removed from "**Manage Allowlist**"_
 
 **Findings**
 
