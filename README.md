@@ -87,10 +87,10 @@ _Noted :  pre-commit-hooks is currentely not supproted. It will be added in the 
 There are two types of security rules <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/builtinrules1.PNG" height="250" />
 
-- Builtin rules : 
+- **Builtin rules** : 
 Pre-defined rules created by Loggicat Engine, users can choose to enable/disable builtin rules.<br />
 Builtin rules can be found in "Manage Security Rules" -> "Built-in Security Rules".
-- Custom rules : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
+- **Custom rules** : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
 To create such rules, simply create the "Add a new rule" button.
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules1.PNG" height="250" />
 In order to create a custom rule, a name and a keyword must be given, keyword can be regex or just simply a string, the input text is for users to validate the keyword works as expected.
@@ -107,8 +107,8 @@ Once a cusom rule is created, users can
 
 ## Allowlists
 Loggicat handles false postivies or acceptd risks by using allowlists. <br />
-- Ignore list: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
-- Redact list: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
+- **Ignore list**: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
+- **Redact list**: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
 
 There are two ways to add a new item to allowlists.
 1. Added from "Findings", users will not be able to change the keyword in this case
@@ -128,7 +128,7 @@ Redact Popup:
 _Items added to whitelists can be edited or removed from "**Manage Allowlist**"_
 
 ## Findings
-Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab in the sidebar.<br />
+Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab on the sidebar.<br />
 Click on a row to expand to view more information
 
 ## Scan Test
@@ -143,6 +143,8 @@ this is my line 3 but with an AWS access key AKIAIOSFODNN7EXAMPLE
 ```
 Result: <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest2.PNG" height="400"/>
+
+_Noted: nothing will be stored/logged on Loggicat Cloud using Scan Test, so feel free to put some real logs there to see how it works_
 
 ---
 
