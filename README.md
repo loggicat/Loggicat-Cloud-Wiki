@@ -83,19 +83,29 @@ _Noted :  pre-commit-hooks is currentely not supproted. It will be added in the 
 # Features
 
 **Security Rules** There are two types of security rules
-<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/builtinrules1.PNG" height="200" />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/builtinrules1.PNG" height="250" />
 
 - Builtin rules : 
 Pre-defined rules created by Loggicat Engine, users can choose to enable/disable builtin rules.<br />
 Builtin rules can be found in "Manage Security Rules" -> "Built-in Security Rules".
 - Custom rules : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
 To create such rules, simply create the "Add a new rule" button.
-<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules1.PNG" height="200" />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules1.PNG" height="250" />
 In order to create a custom rule, a name and a keyword must be given, keyword can be regex or just simply a string, the input text is for users to validate the keyword works as expected.
-<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules2.PNG" height="200" />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules2.PNG" height="250" />
+Once a cusom rule is created, users can 
+
+   - Enable/Disable a custom rule
+   - Edit
+   - Delete
+   - Add a pattern to always ignore (see AllowLists section)
+   - Add a pattern to always redact (see AllowLists section)
+   
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules3.PNG" height="250" />
 
 **Allowlists**
 
+**Findings**
 
 ---
 
