@@ -20,12 +20,12 @@ A Loggicat Watcher acts as a connector between client machines and Loggicat Serv
 
 # Getting Started With Loggicat Server
 * **[Overview](#overview)** What is Loggicat?
-* **[Why Loggicat](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#why-loggicat)** Why do I need Loggicat?
-* **[Workflow](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#workflows)** Some typical Loggicat use cases
-* **[Features](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#features)** Available features
-* **[Integration](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#integrations)** Integrate Loggicat with popular tools such as Github, Slack
-* **[Important Notes](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#important-notes)** Please read this section before your first login
-* **[Questions](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#questions)** Answers to some common questions
+* **[Why Loggicat](#why-loggicat)** Why do I need Loggicat?
+* **[Workflow](#workflows)** Some typical Loggicat use cases
+* **[Features](#features)** Available features
+* **[Integration](#integrations)** Integrate Loggicat with popular tools such as Github, Slack
+* **[Important Notes](#important-notes)** Please read this section before your first login
+* **[Questions](#questions)** Answers to some common questions
 
 
 ---
