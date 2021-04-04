@@ -124,10 +124,20 @@ Redact Popup:
 
 _Items added to whitelists can be edited or removed from "**Manage Allowlist**"_
 
-**Findings**
+**Findings** : Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab in the sidebar.<br />
+Click on a row to expand to view more information
 
-**Scan Test**
+**Scan Test** : With the Scan Test feature, users are able to try out Loggicat Engine eaisly without setting up the Loggicat Watcher.<br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest1.PNG" height="200"/>
 
+Sample text:
+```
+this is my line 1
+this is my line 2
+this is my line 3 but with an AWS access key AKIAIOSFODNN7EXAMPLE
+```
+Result:
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest2.PNG" height="400"/>
 
 ---
 
