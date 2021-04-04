@@ -82,7 +82,9 @@ _Noted :  pre-commit-hooks is currentely not supproted. It will be added in the 
 
 # Features
 
-**Security Rules** There are two types of security rules
+## Security Rules
+
+There are two types of security rules <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/builtinrules1.PNG" height="250" />
 
 - Builtin rules : 
@@ -103,7 +105,8 @@ Once a cusom rule is created, users can
    
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules3.PNG" height="250" />
 
-**Allowlists** Loggicat handles false postivies or acceptd risks by using allowlists. 
+## Allowlists
+Loggicat handles false postivies or acceptd risks by using allowlists. <br />
 - Ignore list: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
 - Redact list: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
 
@@ -124,10 +127,12 @@ Redact Popup:
 
 _Items added to whitelists can be edited or removed from "**Manage Allowlist**"_
 
-**Findings** : Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab in the sidebar.<br />
+## Findings
+Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab in the sidebar.<br />
 Click on a row to expand to view more information
 
-**Scan Test** : With the Scan Test feature, users are able to try out Loggicat Engine eaisly without setting up the Loggicat Watcher.<br />
+## Scan Test
+With the Scan Test feature, users are able to try out Loggicat Engine eaisly without setting up the Loggicat Watcher.<br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest1.PNG" height="200"/>
 
 Sample text:
@@ -136,7 +141,7 @@ this is my line 1
 this is my line 2
 this is my line 3 but with an AWS access key AKIAIOSFODNN7EXAMPLE
 ```
-Result:
+Result: <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest2.PNG" height="400"/>
 
 ---
@@ -150,7 +155,9 @@ In order to leverage all features on Loggicat Cloud, a Loggicat Watcher must be 
 **All tokens/secrets/webhooks mentioned in this section are encrypted on Loggicat Cloud.**<br />
 **Loggicat Cloud will never return plaintext secrets/token back to users, neither from UI or APIs.**<br />
 Loggicat has integrated Github and Slack, other integrations(including Gitlab, Jira, Jenkins, etc.) are under development and will be released in the future.
-- **Github** : Github integration turns a line of logs to the exact code location, this can help developers to fix issues much faster. <br />
+
+## Github
+Github integration turns a line of logs to the exact code location, this can help developers to fix issues much faster. <br />
 _Noted that : Github Code search/scan and commit monitoring are not released yet._ <br />
 
 In order to use Github integration, a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Github Personal Access Token</a> must be created and stored on Loggicat. <br />
@@ -185,7 +192,7 @@ The default confidence is 70% and is configurable in "Github Integration" -> "Gi
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/github5.PNG" height="200"/>
 
 
-- **Slack**
+## Slack
 
 ---
 
