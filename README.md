@@ -19,7 +19,7 @@ A Loggicat Watcher acts as a connector between client machines and Loggicat Serv
 ---
 
 # Getting Started With Loggicat Server
-* **[Overview](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#overview)** What is Loggicat?
+* **[Overview](#overview)** What is Loggicat?
 * **[Why Loggicat](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#why-loggicat)** Why do I need Loggicat?
 * **[Workflow](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#workflows)** Some typical Loggicat use cases
 * **[Features](https://github.com/loggicat/Loggicat-Server-Wiki/blob/main/README.md#features)** Available features
