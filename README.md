@@ -64,7 +64,8 @@ _Noted : Streaming mode is currentely not supproted. It will be added in the nex
 </summary>
 <br />
 Jenkins is a very power CI/CD platform especially with a vast number of plugins. However, this also introduces extra risks since a plugin might log sensitive data in plaintext. Loggicat Watcher can be configured in this case to ensure that any job console output and Jenkins logs are clean. 
-
+<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/splunk-logo-2.png" height="70" />
+  
 </details>
 <details>
 <summary>
@@ -81,6 +82,20 @@ _Noted :  pre-commit-hooks is currentely not supproted. It will be added in the 
 
 # Features
 
+**Security Rules** There are two types of security rules
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/builtinrules1.PNG" height="200" />
+
+- Builtin rules : 
+Pre-defined rules created by Loggicat Engine, users can choose to enable/disable builtin rules.<br />
+Builtin rules can be found in "Manage Security Rules" -> "Built-in Security Rules".
+- Custom rules : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
+To create such rules, simply create the "Add a new rule" button.
+![image](https://user-images.githubusercontent.com/66934613/113501160-3bad6c00-94d8-11eb-8053-73b821d1f237.png)
+
+
+**Allowlists**
+
+
 ---
 
 # Integrations
@@ -88,6 +103,8 @@ _Noted :  pre-commit-hooks is currentely not supproted. It will be added in the 
 ---
 
 # Important Notes
+1. disable non-nessccary rules
+2. always keep generic rules on
 
 ---
 
