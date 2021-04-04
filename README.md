@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/loggicatCloud.png" height="200" />
+<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/loggicatCloud.png" height="300" />
 
 **Loggicat solves data leaks by shifting data security left**
 
@@ -103,9 +103,31 @@ Once a cusom rule is created, users can
    
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules3.PNG" height="250" />
 
-**Allowlists**
+**Allowlists** Loggicat handles false postivies or acceptd risks by using allowlists. 
+- Ignore list: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
+- Redact list: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
+
+There are two ways to add a new item to allowlists.
+1. Added from "Findings", users will not be able to change the keyword in this case
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist1.PNG" />
+Ignore Popup:
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist3.PNG" height="200"/>
+Redact Popup: Loggicat currently supports 5 patterns to redact findings
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist4.PNG" height="200"/>
+
+2. Added from "Manage Security Rules"
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist2.PNG" height="300" />
+Ignore Popup:
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist5.PNG" height="200"/>
+Redact Popup: 
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/allowlist6.PNG" height="200"/>
+
+_Items added to whitelists can be edited or removed from "**Manage Allowlist**"_
 
 **Findings**
+
+**Scan Test**
+
 
 ---
 
