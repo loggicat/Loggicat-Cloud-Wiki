@@ -82,13 +82,15 @@ _Noted :  pre-commit-hooks is currentely not supproted. It will be added in the 
 
 # Features
 
-**Security Rules** There are two types of security rules
+## Security Rules
+
+There are two types of security rules <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/builtinrules1.PNG" height="250" />
 
-- Builtin rules : 
+- **Builtin rules** : 
 Pre-defined rules created by Loggicat Engine, users can choose to enable/disable builtin rules.<br />
 Builtin rules can be found in "Manage Security Rules" -> "Built-in Security Rules".
-- Custom rules : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
+- **Custom rules** : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
 To create such rules, simply create the "Add a new rule" button.
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules1.PNG" height="250" />
 In order to create a custom rule, a name and a keyword must be given, keyword can be regex or just simply a string, the input text is for users to validate the keyword works as expected.
@@ -103,9 +105,10 @@ Once a cusom rule is created, users can
    
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules3.PNG" height="250" />
 
-**Allowlists** Loggicat handles false postivies or acceptd risks by using allowlists. 
-- Ignore list: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
-- Redact list: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
+## Allowlists
+Loggicat handles false postivies or acceptd risks by using allowlists. <br />
+- **Ignore list**: Accepting the risk, once a keyword/finding is ignored, future matches from the same security rule will be ignored. Ignore should be used on **false positives**.
+- **Redact list**: Similar to ignore list, future matches to the items on the redact list will not be reported, the finding will be redacted instead. Redact should be used for **non false positives**.
 
 There are two ways to add a new item to allowlists.
 1. Added from "Findings", users will not be able to change the keyword in this case
@@ -124,10 +127,12 @@ Redact Popup:
 
 _Items added to whitelists can be edited or removed from "**Manage Allowlist**"_
 
-**Findings** : Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab in the sidebar.<br />
+## Findings
+Security findings from both builtin rules and custom rules can be audited/triaged from the "Findings" tab on the sidebar.<br />
 Click on a row to expand to view more information
 
-**Scan Test** : With the Scan Test feature, users are able to try out Loggicat Engine eaisly without setting up the Loggicat Watcher.<br />
+## Scan Test
+With the Scan Test feature, users are able to try out Loggicat Engine eaisly without setting up the Loggicat Watcher.<br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest1.PNG" height="200"/>
 
 Sample text:
@@ -136,12 +141,60 @@ this is my line 1
 this is my line 2
 this is my line 3 but with an AWS access key AKIAIOSFODNN7EXAMPLE
 ```
-Result:
+Result: <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/scantest2.PNG" height="400"/>
+
+_Noted: nothing will be stored/logged on Loggicat Cloud using Scan Test, so feel free to put some real logs there to see how it works_
+
+---
+
+# Watcher Management
+In order to leverage all features on Loggicat Cloud, a Loggicat Watcher must be used, Watcher Management is to monitor watcher activities and generate refresh tokens.
 
 ---
 
 # Integrations
+**All tokens/secrets/webhooks mentioned in this section are encrypted on Loggicat Cloud.**<br />
+**Loggicat Cloud will never return plaintext secrets/token back to users, neither from UI or APIs.**<br />
+Loggicat has integrated Github and Slack, other integrations(including Gitlab, Jira, Jenkins, etc.) are under development and will be released in the future.
+
+## Github
+Github integration turns a line of logs to the exact code location, this can help developers to fix issues much faster. <br />
+_Noted that : Github Code search/scan and commit monitoring are not released yet._ <br />
+
+In order to use Github integration, a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Github Personal Access Token</a> must be created and stored on Loggicat. <br />
+Following scopes are required : 
+  - Full access to repos, this is required in order to scan and search in private repos. public_repo if only for public repos
+  - read:org 
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/github1.PNG" height="200"/>
+
+Github Tokens should be added from the "Github Integration" tab and a name must be provided. <br />
+
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/github2.PNG" height="200"/>
+In this page, you can choose to add/remove/enable/disable Github tokens, the "Test" button will validate the entered Github token and return a list of repos. </ br>
+
+Once at least one token is added to Loggicat Cloud, now users can go to "Findings" tab and trigger a scan manually. <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/github3.PNG" height="200"/>
+
+_Noted that : Scans will be triggered automatically for newly added findings._ <br />
+
+Users might see following Github search status:
+  - Not started : A job has been been created, a manual scan might be needed
+  - Pending : A job has been created and will be triggered soon
+  - Owner Infomation Found : Search is done and Loggicat has found the owner
+  - Owner Infomation Not Found : Search is done and Loggicat has not found the owner
+  - No Github token available : No Github tokens to use
+  - Invalid Gtihub tokens or Invalid confidence setting : Expired Github tokens
+
+Once the result is ready, users can click on the "Display Owner Information" button(as shown in the previous paragraph) to view owner information. <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/github4.PNG" height="200"/>
+
+Confidence is used to measure the accuracy, when the returned infomration seems irrelevant, raise the confidence level. When Loggicat can't find any owner information for many of the findings, try lower the confidence level. <br />
+The default confidence is 70% and is configurable in "Github Integration" -> "Github Integration Settings" <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/github5.PNG" height="200"/>
+
+
+## Slack
 
 ---
 
