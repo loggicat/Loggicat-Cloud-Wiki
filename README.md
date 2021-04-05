@@ -90,7 +90,8 @@ There are two types of security rules <br />
 - **Builtin rules** : 
 Pre-defined rules created by Loggicat Engine, users can choose to enable/disable builtin rules.<br />
 Builtin rules can be found in "Manage Security Rules" -> "Built-in Security Rules".
-- **Custom rules** : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
+- **Custom rules** : When the token/secret you are using is not in the builtin rules, users should reach out to us using the "Contact us" button in the builtin rules tab. <br />
+Before new rules are created, users can choose to create some temporary regex rules in "Manage Security Rules" -> Custom Security Rules".<br />
 To create such rules, simply create the "Add a new rule" button.
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/customrules1.PNG" height="250" />
 In order to create a custom rule, a name and a keyword must be given, keyword can be regex or just simply a string, the input text is for users to validate the keyword works as expected.
@@ -216,15 +217,16 @@ With Slack integration, Loggicat Cloud will be able to notify the right person o
 
 ### Add a slack bot token to Loggicat
 Simply go to "Slack Integration" page. <br />
-<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack5.PNG" height="200"/>
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack5.PNG" height="200"/> <br />
 Users can choose to make the default notification target to either a channel or an user. <br />
-_noted that the user full name won't work, you will need to either use the email address or the user ID_
-<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack6.PNG" height="200"/>
-Messages sent to this channel/user will only contain the number and the categories of findings.
+_noted that the user full name won't work, you will need to either use the email address or the user ID_ <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack6.PNG" height="200"/> <br />
+Messages sent to this channel/user will only contain the number and the categories of findings. <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack7.PNG" />
 
 ### Add a user/channel mapping
-Loggicat Cloud currentely supports 3 types of mappings
+Loggicat Cloud currentely supports 3 types of mappings in "Slack Integration" -> "Slack Integration Settings"
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack9.PNG" height="200"/>
   1. Repo name to Slack channel/Username : This can be used to notify the owner of a github repo, for example, a github teamA/repo1 should be mapped to a slack channel owned by teamA, so whenever Loggicat finds a vulnerability in that repo, they will be notified ASAP. 
   2. Username to Slack channle/Username : This maps an username on github to an username on slack, so whenever this user commits anything vulnerable, she/he will be notified.
   3. Hostname to Slack channel/Username : Security findings reported by Loggicat Watcher will always include a hostname, users can choose to use the hostname as a mapping source. For example, teamA owns a build machine jenkinsA so Loggicat will notify the team channel whenever it sees findings from jenkinsA.
