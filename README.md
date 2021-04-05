@@ -230,7 +230,8 @@ Loggicat Cloud currentely supports 3 types of mappings in "Slack Integration" ->
   1. Repo name to Slack channel/Username : This can be used to notify the owner of a github repo, for example, a github teamA/repo1 should be mapped to a slack channel owned by teamA, so whenever Loggicat finds a vulnerability in that repo, they will be notified ASAP. 
   2. Username to Slack channle/Username : This maps an username on github to an username on slack, so whenever this user commits anything vulnerable, she/he will be notified.
   3. Hostname to Slack channel/Username : Security findings reported by Loggicat Watcher will always include a hostname, users can choose to use the hostname as a mapping source. For example, teamA owns a build machine jenkinsA so Loggicat will notify the team channel whenever it sees findings from jenkinsA.
-_note : The first two mappings(repo name and username) will only be triggered with after Github owner search, while the hostname mapping doesn't need Github integration. _
+
+_note : The first two mappings(repo name and username) will only be triggered with after Github owner search, while the hostname mapping doesn't need Github integration._
 
 Sample message : <br />
 <img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack8.PNG" height="200"/>
