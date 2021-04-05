@@ -159,7 +159,7 @@ In order to leverage all features on Loggicat Cloud, a Loggicat Watcher must be 
 Loggicat has integrated Github and Slack, other integrations(including Gitlab, Jira, Jenkins, etc.) are under development and will be released in the future.
 
 ## Github
-Github integration turns a line of logs to the exact code location, this can help developers to fix issues much faster. <br />
+Github integration turns logs with sensitive data to the exact code location, this can help developers to fix issues much faster. <br />
 _Noted that : Github Code search/scan and commit monitoring are not released yet._ <br />
 
 In order to use Github integration, a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Github Personal Access Token</a> must be created and stored on Loggicat. <br />
@@ -195,6 +195,44 @@ The default confidence is 70% and is configurable in "Github Integration" -> "Gi
 
 
 ## Slack
+With Slack integration, Loggicat Cloud will be able to notify the right person or channel in real time. <br />
+
+### Create a slack bot user and generate bot token
+1. Create a slack app following this <a href="https://api.slack.com/authentication/basics">guide</a>. <br />
+2. Once a slack app is created for your workplace, go to "OAuth & Permissions" to create a bot token. <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack1.PNG" height="200"/>
+3. Create a bot token with following bot token scopes.
+  - chat:write
+  - im:write
+  - incoming-webhook
+  - users.profile:read
+  - users:read
+  - users:read.email
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack2.PNG" height="200"/>
+4. Create a channel for Loggicat notifications on slack and install the app to the that channel. <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack3.PNG" height="200"/>
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack4.PNG" height="200"/>
+5. Now you should have a slack token starting with xoxb-
+
+### Add a slack bot token to Loggicat
+Simply go to "Slack Integration" page. <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack5.PNG" height="200"/>
+Users can choose to make the default notification target to either a channel or an user. <br />
+_noted that the user full name won't work, you will need to either use the email address or the user ID_
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack6.PNG" height="200"/>
+Messages sent to this channel/user will only contain the number and the categories of findings.
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack7.PNG" />
+
+### Add a user/channel mapping
+Loggicat Cloud currentely supports 3 types of mappings
+  1. Repo name to Slack channel/Username : This can be used to notify the owner of a github repo, for example, a github teamA/repo1 should be mapped to a slack channel owned by teamA, so whenever Loggicat finds a vulnerability in that repo, they will be notified ASAP. 
+  2. Username to Slack channle/Username : This maps an username on github to an username on slack, so whenever this user commits anything vulnerable, she/he will be notified.
+  3. Hostname to Slack channel/Username : Security findings reported by Loggicat Watcher will always include a hostname, users can choose to use the hostname as a mapping source. For example, teamA owns a build machine jenkinsA so Loggicat will notify the team channel whenever it sees findings from jenkinsA.
+_note : The first two mappings(repo name and username) will only be triggered with after Github owner search, while the hostname mapping doesn't need Github integration. _
+
+Sample message : <br />
+<img src="https://github.com/loggicat/Loggicat-Cloud-Wiki/blob/main/public/slack8.PNG" height="200"/>
+
 
 ---
 
