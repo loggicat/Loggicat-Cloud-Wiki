@@ -240,9 +240,7 @@ Sample message : <br />
 ---
 
 # Important Notes
-1. disable non-nessccary rules
-2. always keep generic rules on
+1. Non-nessccary builtin rules should be disabled to speed up the scan speed, however, generic rules such as "Generic Secrets" should always be enabled.
+2. Ignore list has higher priority than redact list, so your finding will be ignored if you have the same keyword in both ignore and redact lists, a feature to improve this behavior is under development.
+3. Please use the "Contact us" button to report any bug or feature request, this is the simplest and most efficient way.
 
----
-
-# Questions
