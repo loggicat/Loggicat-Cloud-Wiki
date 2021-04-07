@@ -16,6 +16,12 @@ For <a href="https://github.com/loggicat/Loggicat-watcher-public">Loggicat Watch
 Loggicat Watcher acts as a connector between client machines and Loggicat Cloud.
 <br />
 
+<h3 align="left">
+For <a href="https://github.com/loggicat/Loggicat-Cloud-Wiki">Loggicat Cloud</a>
+</h3>
+Loggicat Cloud is the SaaS server to configure settings and store security findings.
+<br />
+
 ---
 
 # Getting Started With Loggicat Cloud
@@ -34,7 +40,7 @@ Loggicat Watcher acts as a connector between client machines and Loggicat Cloud.
 **Loggicat provides a solution to data leaks and drastically decrese the detection time for such issues from months to seconds or hours.**
 <br />
 There are two components:
-- Loggicat Cloud - A saas server to store security findings and configurations.
+- Loggicat Cloud - A SaaS server to store security findings and configurations.
 - Loggicat Watcher - Deployed on client machines or build machines to scan code, logs and databases.
 
 ---
