@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/loggicatCloud.png" height="300" />
+<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Cloud-Wiki/main/public/loggicatCloud.png" height="300" />
 
 **Loggicat solves data leaks by shifting data security left**
 
@@ -13,12 +13,12 @@
 <h3 align="left">
 For <a href="https://github.com/loggicat/Loggicat-watcher-public">Loggicat Watcher</a>
 </h3>
-Loggicat Watcher acts as a connector between client machines and Loggicat Server.
+Loggicat Watcher acts as a connector between client machines and Loggicat Cloud.
 <br />
 
 ---
 
-# Getting Started With Loggicat Server
+# Getting Started With Loggicat Cloud
 * **[Overview](#overview)** What is Loggicat?
 * **[Why Loggicat](#why-loggicat)** Why do I need Loggicat?
 * **[Workflow](#workflows)** Some typical Loggicat use cases
@@ -50,26 +50,26 @@ There are two components:
 Essentially Loggicat uses a smart engine to detect security issues such as plaintext secrets or PII in given text, so Loggicat can be used under many different circumstances.
 <details>
 <summary>
-  Protecting data security in <img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/splunk-logo-2.png" height="70" />
+  Protecting data security in <img src="https://raw.githubusercontent.com/loggicat/Loggicat-Cloud-Wiki/main/public/splunk-logo-2.png" height="70" />
 </summary>
 <br />
-Before sending local logs to Splunk, we can now have Loggicat watcher to monitor local logs first and any potential sensitive data will be extracted from the logs and sent to Loggicat Server, your splunk logs will always be clean.   
+Before sending local logs to Splunk, we can now have Loggicat watcher to monitor local logs first and any potential sensitive data will be extracted from the logs and sent to Loggicat Cloud, your splunk logs will always be clean.   
   
 _Noted : Streaming mode is currentely not supproted. It will be added in the next release._
  
 </details>
 <details>
 <summary>
-  Protecting data security in <img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/logo-jenkins.jpg" height="70" />
+  Protecting data security in <img src="https://raw.githubusercontent.com/loggicat/Loggicat-Cloud-Wiki/main/public/logo-jenkins.jpg" height="70" />
 </summary>
 <br />
 Jenkins is a very power CI/CD platform especially with a vast number of plugins. However, this also introduces extra risks since a plugin might log sensitive data in plaintext. Loggicat Watcher can be configured in this case to ensure that any job console output and Jenkins logs are clean. 
-<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/splunk-logo-2.png" height="70" />
+<img src="https://raw.githubusercontent.com/loggicat/Loggicat-Cloud-Wiki/main/public/splunk-logo-2.png" height="70" />
   
 </details>
 <details>
 <summary>
-  Protecting data security in <img src="https://raw.githubusercontent.com/loggicat/Loggicat-Server-Wiki/main/public/GitHub-logo.png" height="70" />
+  Protecting data security in <img src="https://raw.githubusercontent.com/loggicat/Loggicat-Cloud-Wiki/main/public/GitHub-logo.png" height="70" />
 </summary>
 <br />
 Loggicat watcher can scan local code for potential sensitive data.
