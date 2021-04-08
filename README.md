@@ -26,7 +26,7 @@ For <a href="https://github.com/loggicat/Loggicat-Cloud-Wiki">Loggicat Cloud</a>
 * **[Features](#features)** Available features
 * **[Integration](#integrations)** Integrate Loggicat with popular tools such as Github, Slack
 * **[Important Notes](#important-notes)** Please read this section before your first login
-* **[Questions](#questions)** Answers to some common questions
+* **[Known issues](#know-issues)** Some known issues and the workarounds
 
 
 ---
@@ -245,3 +245,8 @@ Sample message : <br />
 2. Ignore list has higher priority than redact list, so your finding will be ignored if you have the same keyword in both ignore and redact lists, a feature to improve this behavior is under development.
 3. Please use the "Contact us" button to report any bug or feature request, this is the simplest and most efficient way.
 
+---
+
+# Known Issues
+1. "Failed to connect to server", try refersh the page or re-login
+![image](https://user-images.githubusercontent.com/66934613/113975734-ceaa1700-97f4-11eb-9358-25dd2f8220a4.png)
