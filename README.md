@@ -26,7 +26,7 @@ For <a href="https://github.com/loggicat/Loggicat-Cloud-Wiki">Loggicat Cloud</a>
 * **[Features](#features)** Available features
 * **[Integration](#integrations)** Integrate Loggicat with popular tools such as Github, Slack
 * **[Important Notes](#important-notes)** Please read this section before your first login
-* **[Known issues](#know-issues)** Some known issues and the workarounds
+* **[Known issues](#known-issues)** Some known issues and the workarounds
 
 
 ---
