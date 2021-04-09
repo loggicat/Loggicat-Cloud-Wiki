@@ -41,9 +41,10 @@ There are two components:
 ---
 
 # Why Loggicat
+- **Prevent data leaks** : Logs will never contain any sensitive data with Loggicat (code push monitoring will be available in the next releases)
 - **Seamless integration** : Loggicat will not change how you work, it can be used on top of any other tools.
 - **Another layer of security** : Even if you already have an in-house solution or another tool, it is always good to have something else since there might always be some false-negatives cases in the security world
-- **FREE** - Any company can request to have a few license to enjoy all the features for FREE!
+- **FREE** - Loggicat will be entirely FREE during beta release!
 
 ---
 
