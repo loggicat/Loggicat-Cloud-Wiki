@@ -17,7 +17,7 @@ For <a href="https://github.com/loggicat/Loggicat-watcher-public">Loggicat Watch
 For <a href="https://github.com/loggicat/Loggicat-Cloud-Wiki">Loggicat Cloud</a>
 </h3>
 <h3 align="left">
-For <a href="https://github.com/loggicat/Loggicat-engine">Loggicat Engine(Open source Loggicat CLoud)</a>
+For <a href="https://github.com/loggicat/Loggicat-engine">Loggicat Scan Engine</a>
 </h3>
 
 ---
